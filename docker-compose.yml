@@ -1,0 +1,37 @@
+services:
+  db:
+    container_name: postgres
+    image : postgres
+    environment:
+      POSTGRES_USER : postgres
+      POSTGRES_PASSWORD : postgres
+      PGDATA : /data/postgres
+    volumes:
+      - db:/data/postgres
+    ports:
+      - "5433:5432"
+    networks:
+      - db
+    restart: unless-stopped
+  spring-boot-practice-api:
+    container_name : spring-boot-practice-api
+    image : siddhu745/spring-boot-practice-api
+    environment:
+      SPRING_DATASOURCE_URL : jdbc:postgresql://db:5432/customers
+    volumes:
+      - db:/data/postgres
+    ports:
+      - "745:8080"
+    networks:
+      - db
+    depends_on:
+      - db
+    restart: unless-stopped
+#    command:
+#      - --spring.datasource.url=d=jdbc:postgresql://db:5432/customers
+
+networks:
+  db:
+    driver: bridge
+volumes:
+  db:

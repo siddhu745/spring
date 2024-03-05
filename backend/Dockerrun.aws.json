@@ -1,0 +1,23 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "spring-boot-practice-api",
+      "image": "siddhu745/spring-boot-practice-api:latest",
+      "essential": true,
+      "memory": 512,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 8080
+        }
+      ],
+      "environment": [
+        {
+          "name": "SPRING_DATASOURCE_URL",
+          "value": "jdbc:postgresql://awseb-e-icgzxwryip-stack-awsebrdsdatabase-wfvebag7mbte.crmq0asuyv8w.ap-south-1.rds.amazonaws.com:5432/customers"
+        }
+      ]
+    }
+  ]
+}
