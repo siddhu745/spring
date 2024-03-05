@@ -68,6 +68,7 @@ jobs:
           ${{ secrets.SLACK_WEBHOOK_URL }}
       - name: Update Dockerrun.aws.json api image tag with new Build number
         run: |
+          cd backend
           echo "Dockerrun.aws.json before updating the tag"
           cat Dockerrun.aws.json
           sed -i -E 's_(siddhu745/spring-boot-practice-api:)([^"]*)_\1'${{ steps.build-number.outputs.BUILD_NUMBER }}'_' Dockerrun.aws.json
