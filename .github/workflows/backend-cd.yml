@@ -59,14 +59,14 @@ jobs:
 #          ${{ secrets.SLACK_WEBHOOK_URL }}
       - name: Build package push with maven
         run: mvn -ntp -B verify -D docker.image.tag=${{steps.build-number.outputs.BUILD_NUMBER}} jib:build
-      - name: Send Slack Message
-        run: >
-          curl && curl -X POST -H 'Content-type: application/json' 
-          --data '
-            {"text":":docker: Image tag: ${{steps.build-number.outputs.BUILD_NUMBER}} 
-             pushed to https://hub.docker.com/repository/docker/siddhu745/spring-boot-practice-api"}
-          '
-          ${{ secrets.SLACK_WEBHOOK_URL }}
+#      - name: Send Slack Message
+#        run: >
+#          curl && curl -X POST -H 'Content-type: application/json'
+#          --data '
+#            {"text":":docker: Image tag: ${{steps.build-number.outputs.BUILD_NUMBER}}
+#             pushed to https://hub.docker.com/repository/docker/siddhu745/spring-boot-practice-api"}
+#          '
+#          ${{ secrets.SLACK_WEBHOOK_URL }}
       - name: Update Dockerrun.aws.json api image tag with new Build number
         run: |
           echo "Dockerrun.aws.json before updating the tag"
