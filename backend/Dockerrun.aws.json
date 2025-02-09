@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "spring-boot-practice-api",
-      "image": "siddhu745/spring-boot-practice-api:05.03.2024.11.48.59",
+      "image": "siddhu745/spring-boot-practice-api:05.03.2024.13.08.04",
       "essential": true,
       "memory": 512,
       "portMappings": [
