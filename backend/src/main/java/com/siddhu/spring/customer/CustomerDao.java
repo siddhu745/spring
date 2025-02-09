@@ -13,4 +13,8 @@ public interface CustomerDao {
 
     void deleteCustomer(Integer id);
     void updateCustomer(Customer update);
+
+    Optional<Customer> getCustomerWithName(String name);
+
+    void updateCustomerProfileImageId(String profileImageId, Integer id);
 }

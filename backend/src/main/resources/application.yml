@@ -3,11 +3,25 @@ server :
   error :
     include-message : always
 
+cors:
+  allowed-origins: "*"
+  allowed-methods: "*"
+  allowed-headers: "*"
+  exposed-headers: "*"
+
+aws:
+  region: ap-south-1
+  s3:
+    buckets:
+      customer: sb-practice
+
+
+
 spring :
   datasource :
-    url : jdbc:postgresql://localhost:5433/customers
+    url : jdbc:postgresql://localhost:5432/customers
     username : postgres
-    password : postgres
+    password : Naaperusiddhu@745
   jpa :
     hibernate :
       ddl-auto :  validate
@@ -15,7 +29,7 @@ spring :
       hibernate :
         dialect : org.hibernate.dialect.PostgreSQLDialect
         format_sql : true
-    show-sql : false
+    show-sql : true
 
   main :
     web-application-type : servlet

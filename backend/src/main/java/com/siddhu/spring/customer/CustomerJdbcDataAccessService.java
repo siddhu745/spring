@@ -34,11 +34,12 @@ public class CustomerJdbcDataAccessService implements CustomerDao{
     @Override
     public void insertCustomer(Customer customer) {
         String sql = """
-                INSERT INTO customer (name,date,gender)
+                INSERT INTO customer (name,password,date,gender)
                 VALUES(
-                ?,?,?
+                ?,?,?,?
                 )""" ;
         jdbcTemplate.update(sql,customer.getName(),
+                customer.getPassword(),
                 customer.getDate(),
                 customer.getGender());
     }
@@ -96,5 +97,23 @@ public class CustomerJdbcDataAccessService implements CustomerDao{
         }
 
 
+    }
+
+    @Override
+    public Optional<Customer> getCustomerWithName(String name) {
+        String sql = "SELECT * FROM customer where name = ?";
+
+        return jdbcTemplate.query(sql,customerRowMapper,name)
+                .stream().findFirst();
+    }
+
+    @Override
+    public void updateCustomerProfileImageId(String profileImageId, Integer id) {
+        String sql = """
+                UPDATE customer
+                SET profile_image_id = ?
+                where id = ?
+                """;
+        jdbcTemplate.update(sql,profileImageId,id);
     }
 }

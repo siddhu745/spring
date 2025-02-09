@@ -3,12 +3,15 @@ package com.siddhu.spring.customer;
 import com.siddhu.spring.exceptions.DuplicateResourceException;
 import com.siddhu.spring.exceptions.RequestValidationException;
 import com.siddhu.spring.exceptions.ResourceNotFoundException;
+import com.siddhu.spring.s3.S3Buckets;
+import com.siddhu.spring.s3.S3Service;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.sql.Date;
 import java.util.Optional;
@@ -25,9 +28,27 @@ class CustomerServiceTest {
     @Mock
     private CustomerDao customerDao;
 
+    @Mock
+    private PasswordEncoder passwordEncoder;
+
+    @Mock
+    private S3Service s3Service;
+
+    @Mock
+    private S3Buckets s3Buckets;
+
+
+    private final CustomerDTOMapper customerDTOMapper = new CustomerDTOMapper();
+
     @BeforeEach
     void setUp() {
-        underTest = new CustomerService(customerDao);
+        underTest = new CustomerService(
+                customerDao,
+                customerDTOMapper,
+                passwordEncoder,
+                s3Service,
+                s3Buckets
+                );
     }
 
     @Test
@@ -44,15 +65,17 @@ class CustomerServiceTest {
         //Given
         int id = 10;
         Customer customer = new Customer(
-                id, "siddhu", new Date(2002, 28, 12), "male"
+                id, "siddhu", "password", new Date(2002, 28, 12), "male"
         );
         when(customerDao.getCustomer(id)).thenReturn(Optional.of(customer));
 
+        CustomerDTO expected  = customerDTOMapper.apply(customer);
+
         //When
-        Customer actual = underTest.getCustomer(id);
+        CustomerDTO actual = underTest.getCustomer(id);
 
         //Then
-        assertThat(actual).isEqualTo(customer);
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test
@@ -78,9 +101,12 @@ class CustomerServiceTest {
 
         CustomerRegistrationRequest request = new CustomerRegistrationRequest(
                 name,
-                new Date(2002, 12, 28),
+                "password", new Date(2002, 12, 28),
                 "male"
         );
+
+        String passwordHash = "&fhsk23lks90hhgy344";
+        when(passwordEncoder.encode(request.password())).thenReturn(passwordHash);
 
         //When
         underTest.addCustomer(request);
@@ -93,6 +119,7 @@ class CustomerServiceTest {
         Customer value = customerArgumentCaptor.getValue();
         assertThat(value.getId()).isNull();
         assertThat(value.getName()).isEqualTo(request.name());
+        assertThat(value.getPassword()).isEqualTo(passwordHash);
         assertThat(value.getDate()).isEqualTo(request.date());
         assertThat(value.getGender()).isEqualTo(request.gender());
     }
@@ -105,7 +132,7 @@ class CustomerServiceTest {
 
         CustomerRegistrationRequest request = new CustomerRegistrationRequest(
                 name,
-                new Date(2002, 12, 28),
+                "password", new Date(2002, 12, 28),
                 "male"
         );
 
@@ -156,7 +183,7 @@ class CustomerServiceTest {
         Customer customer = new Customer(
                 id,
                 "siddhuBoy",
-                new Date(2002, 12, 28),
+                "password", new Date(2002, 12, 28),
                 "male"
         );
         when(customerDao.getCustomer(id)).thenReturn(Optional.of(customer));
@@ -190,7 +217,7 @@ class CustomerServiceTest {
         Customer customer = new Customer(
                 id,
                 "siddhuBoy",
-                new Date(2002, 12, 28),
+                "password", new Date(2002, 12, 28),
                 "male"
         );
         when(customerDao.getCustomer(id)).thenReturn(Optional.of(customer));
@@ -224,7 +251,7 @@ class CustomerServiceTest {
         Customer customer = new Customer(
                 id,
                 "siddhuBoy",
-                new Date(2002, 12, 28),
+                "password", new Date(2002, 12, 28),
                 "male"
         );
         when(customerDao.getCustomer(id)).thenReturn(Optional.of(customer));
@@ -257,7 +284,7 @@ class CustomerServiceTest {
         Customer customer = new Customer(
                 id,
                 "siddhuBoy",
-                new Date(2002, 12, 28),
+                "password", new Date(2002, 12, 28),
                 "male"
         );
         when(customerDao.getCustomer(id)).thenReturn(Optional.of(customer));
@@ -290,7 +317,7 @@ class CustomerServiceTest {
         Customer customer = new Customer(
                 id,
                 "siddhuBoy",
-                new Date(2002, 12, 28),
+                "password", new Date(2002, 12, 28),
                 "male"
         );
         when(customerDao.getCustomer(id)).thenReturn(Optional.of(customer));
@@ -321,7 +348,7 @@ class CustomerServiceTest {
         Customer customer = new Customer(
                 id,
                 name,
-                date,
+                "password", date,
                 gender
         );
         when(customerDao.getCustomer(id)).thenReturn(Optional.of(customer));

@@ -3,7 +3,6 @@ package com.siddhu.spring.customer;
 import com.siddhu.spring.AbstractTestContainers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.sql.Date;
 import java.util.List;
@@ -11,7 +10,6 @@ import java.util.Optional;
 import java.util.Random;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class CustomerJdbcDataAccessServiceTest extends AbstractTestContainers {
 
@@ -33,7 +31,7 @@ class CustomerJdbcDataAccessServiceTest extends AbstractTestContainers {
         String[] gender = {"male","female"};
         Customer customer = new Customer(
                 FAKER.name().fullName(),
-                new Date(FAKER.date().birthday().getTime()),
+                "password", new Date(FAKER.date().birthday().getTime()),
                 gender[random.nextInt(2)]
         );
         underTest.insertCustomer(customer);
@@ -53,7 +51,7 @@ class CustomerJdbcDataAccessServiceTest extends AbstractTestContainers {
         String[] gender = {"male","female"};
         Customer customer = new Customer(
                 FAKER.name().fullName(),
-                new Date(FAKER.date().birthday().getTime()),
+                "password", new Date(FAKER.date().birthday().getTime()),
                 gender[random.nextInt(2)]
         );
         underTest.insertCustomer(customer);
@@ -96,7 +94,7 @@ class CustomerJdbcDataAccessServiceTest extends AbstractTestContainers {
         String[] gender = {"male","female"};
         Customer customer = new Customer(
                 FAKER.name().fullName(),
-                new Date(FAKER.date().birthday().getTime()),
+                "password", new Date(FAKER.date().birthday().getTime()),
                 gender[random.nextInt(2)]
         );
         underTest.insertCustomer(customer);
@@ -134,7 +132,7 @@ class CustomerJdbcDataAccessServiceTest extends AbstractTestContainers {
         String[] gender = {"male","female"};
         Customer customer = new Customer(
                 FAKER.name().fullName(),
-                new Date(FAKER.date().birthday().getTime()),
+                "password", new Date(FAKER.date().birthday().getTime()),
                 gender[random.nextInt(2)]
         );
         underTest.insertCustomer(customer);
@@ -172,7 +170,7 @@ class CustomerJdbcDataAccessServiceTest extends AbstractTestContainers {
         String[] gender = {"male","female"};
         Customer customer = new Customer(
                 FAKER.name().fullName(),
-                new Date(FAKER.date().birthday().getTime()),
+                "password", new Date(FAKER.date().birthday().getTime()),
                 gender[random.nextInt(2)]
         );
         underTest.insertCustomer(customer);
@@ -200,7 +198,7 @@ class CustomerJdbcDataAccessServiceTest extends AbstractTestContainers {
         String[] gender = {"male","female"};
         Customer customer = new Customer(
                 FAKER.name().fullName(),
-                new Date(FAKER.date().birthday().getTime()),
+                "password", new Date(FAKER.date().birthday().getTime()),
                 gender[random.nextInt(2)]
         );
         underTest.insertCustomer(customer);

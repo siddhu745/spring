@@ -7,7 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -29,7 +28,7 @@ class CustomerRowMapperTest {
         Customer customer = new Customer(
                 1,
                 "siddhuBoy",
-                new Date(2002, 12, 28),
+                "password", new Date(2002, 12, 28),
                 "male"
         );
 

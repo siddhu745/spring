@@ -21,7 +21,7 @@ services:
     volumes:
       - db:/data/postgres
     ports:
-      - "745:8080"
+      - "746:8080"
     networks:
       - db
     depends_on:

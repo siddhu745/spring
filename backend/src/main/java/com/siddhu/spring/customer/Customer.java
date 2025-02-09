@@ -1,8 +1,13 @@
 package com.siddhu.spring.customer;
 
 import jakarta.persistence.*;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.sql.Date;
+import java.util.Collection;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -12,10 +17,14 @@ import java.util.Objects;
                 @UniqueConstraint(
                         name = "customer_name_unique",
                         columnNames = "name"
+                ),
+                @UniqueConstraint(
+                        name = "profile_image_id_unique",
+                        columnNames = "profileImageId"
                 )
         }
 )
-public class Customer {
+public class Customer implements UserDetails {
     @Id
     @SequenceGenerator(
             name = "customer_id_seq",
@@ -43,15 +52,44 @@ public class Customer {
     )
     private String gender;
 
+    @Column(
+            nullable = false
+    )
+    private String password;
+
+    @Column(
+            unique = true
+    )
+    private String profileImageId;
+
     public Customer() {}
-    public Customer(Integer id, String name, Date date, String gender) {
+    public Customer(Integer id,
+                    String name,
+                    String password,
+                    Date date,
+                    String gender) {
         this.id = id;
         this.name = name;
+        this.password = password;
         this.date = date;
         this.gender = gender;
     }
-    public Customer(String name, Date date, String gender) {
+
+    public Customer(Integer id,
+                    String name,
+                    String password,
+                    Date date,
+                    String gender,
+                    String profileImageId) {
+        this(id,name,password,date,gender);
+        this.profileImageId = profileImageId;
+    }
+    public Customer(String name,
+                    String password,
+                    Date date,
+                    String gender) {
         this.name = name;
+        this.password = password;
         this.date = date;
         this.gender = gender;
     }
@@ -87,26 +125,61 @@ public class Customer {
     public void setGender(String gender) {
         this.gender = gender;
     }
-//    public Customer(String name, String email, Integer age) {
-//        this.name = name;
-//        this.email = email;
-//        this.age = age;
-//    }
 
+    public String getProfileImageId() {
+        return profileImageId;
+    }
+
+    public void setProfileImageId(String profileImageId) {
+        this.profileImageId = profileImageId;
+    }
+
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of(new SimpleGrantedAuthority("ROLE_USER"));
+    }
+
+    @Override
+    public String getPassword() {
+        return this.password;
+    }
+
+    @Override
+    public String getUsername() {
+        return name;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Customer customer)) return false;
-        return Objects.equals(getId(), customer.getId())
-                && Objects.equals(getName(), customer.getName())
-                && Objects.equals(getDate(), customer.getDate())
-                && Objects.equals(getGender(), customer.getGender());
+        return Objects.equals(getId(), customer.getId()) && Objects.equals(getName(), customer.getName()) && Objects.equals(getDate(), customer.getDate()) && Objects.equals(getGender(), customer.getGender()) && Objects.equals(getPassword(), customer.getPassword()) && Objects.equals(getProfileImageId(), customer.getProfileImageId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getName(), getDate(), getGender());
+        return Objects.hash(getId(), getName(), getDate(), getGender(), getPassword(), getProfileImageId());
     }
 
     @Override
@@ -116,6 +189,8 @@ public class Customer {
                 ", name='" + name + '\'' +
                 ", date=" + date +
                 ", gender='" + gender + '\'' +
+                ", password='" + password + '\'' +
+                ", profileImageId='" + profileImageId + '\'' +
                 '}';
     }
 }

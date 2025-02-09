@@ -1,0 +1,237 @@
+[
+  {
+    "product": "itext-core",
+    "licensee": {
+      "company": "apcfss",
+      "name": "siddhu gorli",
+      "email": "siddhu.g@apcfss.co.in"
+    },
+    "key": "329b0b98137eeee6dbfaf16f744aa93f8cbf2d71a2868c54f3b3ffb0e37310e0",
+    "creationDate": "2024-07-24",
+    "expirationDate": "2024-08-24",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "productVersion": {
+      "major": 8,
+      "minor": 0
+    },
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "CyaPtFzywpk43tKp4vyhm0MjxxvWGIGqAm/3e3NW7Rpo1ILq5tvuAajXTgSz4DGwCA1iK+qkT4o/EVOm1PBA34JXhX3f17cBc2VykIQI6f8Jzrjmz1YgT88IH2SvcFWQsNgRR5KxgL0pF6SD+Kv5EVMc/qU+2NXpie0fOKEogGvidS+6Ef/9amGjtpwkcOrNT0Y0QQWXOyUkSU+ujTiQH9gnzh01YadppgRcyN2kG35GIGnUinToCdzIP4o/hH8GT0awPPH2f1tjgvpAJAkzsrHVodQbVQISW4WoPtf0k4Ke2ltc54ChQAXNeS4cZEUQ5SrTntofhy03HtQZRlp6Kps/UdVzZFgWlct73bi/Qid80PhX/moUuIZsIDa3mAsAsJ0uI/I248Spz5OZkoYtGbfgZjL/FE9uNbM3Xqfo6vIOCqn9XV/zTB7y0ivKNH4t/kxTtslBw5v7xoaVroFDl/ocnrv008YnSTKb4yC0XKJQ5m+zc/DzS4Wg4wBHUjFuukCshcKOK0u22oztupuAE6KBqzQv8ZLEfEIMYhY8m32kQA9/q4GAt3ZjPr+9mv/xJ0pb8k3UWMyLX9fKz1cRxarnjskor6X7oTydPRqAw+VyQvDMlUPot1HAsS6dn27q9/tch4nVPMM6ieu6bAVbU+h+RmQwzkEa5C7EuPZrkVw="
+  },
+  {
+    "product": "pdfXfa",
+    "licensee": {
+      "company": "apcfss",
+      "name": "siddhu gorli",
+      "email": "siddhu.g@apcfss.co.in"
+    },
+    "key": "329b0b98137eeee6dbfaf16f744aa93f8cbf2d71a2868c54f3b3ffb0e37310e0",
+    "creationDate": "2024-07-24",
+    "expirationDate": "2024-08-24",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "productVersion": {
+      "major": 4
+    },
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "YYi3SALh9+AXsoLZWeNfdwMPmAtTxCJ9YHiyBxcgqkCsUUjAn9W1J1Uv/zn4YoKcF/IVemiPgmEy/cFcTaDPGxtqjRFxaMrxJra/32y3tWya8U/KiJxky/e2+R94JPBeBxqjz8L1N+hu8d3pik/JP4pNCNgTJOAzr1RHP87VlxbXQKoRMC6sjp30L5NwD8Qn6eErfd/k1uarvCzhpBnKTDBZI8ozwKI01DjKbi2sM/5+buXEssTsZjXuRtKpeQ90oscKop0MRAdV1tzJSqcenmUmehvTftRxczU2pqWHsq4ORZgxtpO8jA70QWtTVpyCyA6CpVfPrjCxF0n2+YoGquNmGnpH30CWLcYONPNxn4z978pKzGK4tugTSW6dNgrqNqWnNKGcXXU3f4ETJwS3GCxFc+d66fhoCbGW2KkqWocDkXVRObNQuAHJ3LjS5GzB7jSwNtiWrkwhoQAisdmcYpayS/V72I/e8O7U7BMHHIjBA1TC1r8oMfzA53eViOE3+BPEbuKRQM8w9+sBLlQ9/IYrXcmGJkqRz2oPf21dXr2vZoeVl+l+PnD95H0jO0dqLSzZ9dI9/ZXKAcPQzJ/0/iZCFKKWwLVB4MZOfPv9AGZiF6q3vnVEm5K4KE7zWAgbff38L2L7e6/RYKARtQ9xXE0Gu8sdJNOMfJQntbzt5Rg="
+  },
+  {
+    "product": "pdfSweep",
+    "licensee": {
+      "company": "apcfss",
+      "name": "siddhu gorli",
+      "email": "siddhu.g@apcfss.co.in"
+    },
+    "key": "329b0b98137eeee6dbfaf16f744aa93f8cbf2d71a2868c54f3b3ffb0e37310e0",
+    "creationDate": "2024-07-24",
+    "expirationDate": "2024-08-24",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "productVersion": {
+      "major": 4
+    },
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "RJCHTY7BE6TSX2BNR329gvm+/X/73I6fZrRBeKY+lT0QJhFWnu4eWLeRagrkn6hwMHr8Q3jwY8lteJOVakuhk47fm/57dsOuKETQuWtlsi7TP6IlD18zg/EWGjXzevmYrsjlVBJMNo4BwwrZjdV8jKTxe4QYUSPX6MT3+e5pp43qpPV65Ra+2ZKrC2yECnxnpOsl996zoxoCAFWteAVGnUI1j6jidwW0f2gXe6gb3fgAWHMczBOIrE9jjntW1hGSV7N21nB48JxX4MT6UT4u63CCKKEW856lgMtQiBE0s34iLho/MQhjyvhqwLX+REVaplBtPGu7jCvo9YuTBu3QxAtQBl0IjcfCmn3qJ+3HRrAbr5vDjg9OqgFYoVh05rRDzLvwzDghYMSzGWeg3MZXKXlf8Pr5ojINCTf3YRoEd7twP1xbTGaCnhX5AO8ccvjzg7fTFtTpEJZyc7IG/dAhe2McGqb2ZBiODNI1TF8P3v/8s50C763T3xGNypRx0yWyfsrg3Lpb6CFKumm7HdeVRYCsXgURRXOPmda9R7b+zLtGqchvd7trRvS5sWqzaqz7U+xpC/wZMfEc2en/34h0d5Wpe3Q+XEly1HezexoT5kfwmeKy2U8HArhSEP75gCzPiPcB4NLqe/VkCfpf3jy+oU+WPg8E53HOPQKE2ImjhlY="
+  },
+  {
+    "product": "pdfRender",
+    "licensee": {
+      "company": "apcfss",
+      "name": "siddhu gorli",
+      "email": "siddhu.g@apcfss.co.in"
+    },
+    "key": "329b0b98137eeee6dbfaf16f744aa93f8cbf2d71a2868c54f3b3ffb0e37310e0",
+    "creationDate": "2024-07-24",
+    "expirationDate": "2024-08-24",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "productVersion": {
+      "major": 2
+    },
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "MaGGHxeVMxyDt2a7as+hPQQFxxCt+tKHWXvYPs5QWfWZDnkhRlNz0FJIJBXdpEjeMKpJaCJzMXX4erhSiPjaWDQP8+4iwYylkxwY91y/QQ7h8JZ5Vp1ToWNgCCfJtEd+ehmskwJLvIivOKuF0A7r7+meChiC37B5gz+hD2st9OMIt7m3vwY525Q9Fs/x1Jb/fJ0o3DIdYnLlvrBv4VFRYazco5m82k0xnl72XLffeG9EWPn7wGwbgTfZStA2ZHwM0l0c7ogui4HiYK2dO9swgp5wBc5Tx2n/f/3YyGd7TK1aIsOSm9D+1HTRQdTRuqwUtNTzzuqo5rDZDDAiHUEmBmUjKvUpAIL5RDHIali2tAFZmqh94qKn/eJGSZBMjkEF4ngBU/1QBjxWarWOI+/yYEk95ucmWoriMX24HhLJW7CuG7lsuy/D0gw/IQU+bzzAPTnu1XRaUmlHfeui1Z5BaBJv2BBZHVOKtB9ZlrQ+S2GBTlMpv2p1mcL12R8KAlkwEH7SwTJLavkSRvBuFfDUv9uSlMuqiblgnpIJcgrBaTk6RwH2kt4yYQ5Wfj3AwAglUNTlPkTJRvj+cl3nIDFDqYUVMC33Wu7wjhMIa09w4K73BqrE3L/AbJ7A2RcWqGTdENp5ezRLF4A0DdPrbOS1lQ8OS2lZ+7gkJIC0gpCUhv8="
+  },
+  {
+    "product": "pdfOcr-tesseract4",
+    "licensee": {
+      "company": "apcfss",
+      "name": "siddhu gorli",
+      "email": "siddhu.g@apcfss.co.in"
+    },
+    "key": "329b0b98137eeee6dbfaf16f744aa93f8cbf2d71a2868c54f3b3ffb0e37310e0",
+    "creationDate": "2024-07-24",
+    "expirationDate": "2024-08-24",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "productVersion": {
+      "major": 3
+    },
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "acGKLeVmXxel/uk5VIJdDST02+dDaQaklIavaWDnuqVVEXzAvxUDHoxVKqwlVt5dl/+1WrCQgN5lYUVRP7kHu4xaVMpozRdcCZ+Fv8E/MkOiyGiBYI2Jk230P5p2zR16ZTiOjsAH83nnEj+8If9FjrW+/pqGVm52p9LrLwzlWgx82pSi4RP/kP89G7CcAlWfl1UdN1qdHjL/LQ2OHm7eeCPWWGaTNHeMDtEG/R0O00oA4dNuZ6keKbxEj7nfy3Fd8coFkBvK4rxviBJKAqlFVhAmfvclwcIYuldE7Lo0iefPJxTNzEjAG6RPIC+loqkC5Qp2hqiWadwBbms3SmiSI9JcHu/+lFSBR7Pr+a+BCDD3OeRz96DVrcfh/5ieXPIjfEx4Jtm+W3NQkHPaT3ElTQimQEYIBwITLDKCemLW66F5eo1I1Ry6DlXqQxcLutlruPZkUQvb/fXl9lICj+nxGf3kEp5rsGkd+U/PxgM4ry6zoYo433QXAFjEnWEsjz2bdIAJ4m2rFU9j18jaA/AWURW+v48UKzSTvfTR42B2w/8fVJ9mis7RdtsvAtGdBA5e0/LIMIWslexs4t6vukUksOPaaPXvUEQUQySZCMzfFsungmDa5ALxKIanRohezlQnp4k0CCtYw4/zsz+yABSgKOLJRrgOiGZRT6QDoXkR8Mg="
+  },
+  {
+    "product": "pdfOptimizer",
+    "licensee": {
+      "company": "apcfss",
+      "name": "siddhu gorli",
+      "email": "siddhu.g@apcfss.co.in"
+    },
+    "key": "329b0b98137eeee6dbfaf16f744aa93f8cbf2d71a2868c54f3b3ffb0e37310e0",
+    "creationDate": "2024-07-24",
+    "expirationDate": "2024-08-24",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "productVersion": {
+      "major": 3
+    },
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "FlAqJfwKx0H4MsE4dHEc1L6FV84yXAnegNpn1MP6LBIuuU1hbr33Gra2HwRMRXRPr3ODdnRH0yuglSs/QFpfrSxOEpkgNZtBxQxht3KwraipLFIi11Xk6EDi5I5btkPW0KFT2qki4yOgA+UyiDGo0OfMwUkmsxRqSwyV97h6qaFGVNTm/2LskADAHj+GWmBY9TWYl6MXMzcRnq0O9xH7FMMY03mS5wlFFkttKdDo7UwzGT4hpRAC7HDVdVaeAGSJRMVPlNs093aIjKH8FjVThypR/lZD5grc8uN8fjX3SUYQTmjQb/ciMtipEChsdpn1iClJxXY/Ad/06cYWwNUomoFR72Df4xbQp0NAeboy8PcjHkjK19kohDdqv+tR23HxNvf+mm3WtM+F95nPCAWNXk/2+bHIRXCeFip/wTmCSuWsl92fupXZ/zvpZqjtB2y3i9Q4B4vmOn+KTpbVwnCkzQB0oCyOijZ62yVm/AQ7QMkS101wh0tmfK4+faAx2paxJAsXijYMMbHd5k4iNo3t+rMSHYoT0am8PD/JnvYVj0SutKC8x3EpHAtoWMpfeVGC8moWopsHMqqpgRAQB/yr+bWX8fAtBPfK+4jWARI81ZVsBl6bHQva/hDgn/0xd6xfQtoZxYn+jLghsl9DEKcXZsng9bcuZ5r2oi4vTsA3xB0="
+  },
+  {
+    "product": "pdfHtml",
+    "licensee": {
+      "company": "apcfss",
+      "name": "siddhu gorli",
+      "email": "siddhu.g@apcfss.co.in"
+    },
+    "key": "329b0b98137eeee6dbfaf16f744aa93f8cbf2d71a2868c54f3b3ffb0e37310e0",
+    "creationDate": "2024-07-24",
+    "expirationDate": "2024-08-24",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "productVersion": {
+      "major": 5
+    },
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "CaZDOAmUoOHI13ftjMkKUyYq8qQYJF1RGaMk+54vl2zzvE1nymn8mju2W8IV0i6/KwAbQxLfZKdVuktGT0yXKEnDX8DBiR17RAWRltdBfLH5W2ZfDtcbSS8GmKhgw0BCuoh/nSENZ/x5qyVCp/Syvz6UZ3BXO/EU7dbcsw9WTMn6FOYWlqjXEtmiVTfBkqbnRIPuhY6CVtJvGNylP1q0eol1lwqyPnjXYzQOKVsPjr1bpUjOpaseV0i5OmLmRma3+xz3tWZNbNi+JaTDkDF2fGQ+wBPBlZWIrcYCwWGP+9aPPfboDNOlaRWvWjAPIAMoYsqu/ySvRahn5189ZiqC53vrGVznuS7PjR21hlEHPV4Y8Bc5BC3uMS/B7abXT59Ae8sylWoxqvo4T4CbSDV4Ll7ei7/AvDtA7p2gjqX5x0PmJzau2CSNflzR99OclnRxQJw9ZEhdGQxwI2bvoEmgEUvy5YkVSbbLW+jYTVvv3Epm0YfMScI/m7M9VL3aa5vDQG+AUComXpBhF2wSgjRKDUGYhsdcx3QRUxWbxOQY3XSlhAAijWaspcINdDivan7Phv26n7/MG/IVA2Umoqp5hV3xax/DUko6SfrtPO4+BNjcVRq7Dwtp0DQFeje7o8vceB5cAANswFVhM8CZRXKPrr/vzZgeS4lr59K3RCcUiew="
+  },
+  {
+    "product": "pdfCalligraph",
+    "licensee": {
+      "company": "apcfss",
+      "name": "siddhu gorli",
+      "email": "siddhu.g@apcfss.co.in"
+    },
+    "key": "329b0b98137eeee6dbfaf16f744aa93f8cbf2d71a2868c54f3b3ffb0e37310e0",
+    "creationDate": "2024-07-24",
+    "expirationDate": "2024-08-24",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "productVersion": {
+      "major": 4
+    },
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "CzWrXl6q5lpj9HGfglnlB1Y50VexAaW+FFGCqTjFoephC/Nkg7b6OGh8iw1J01IOtc2+BkJtQkgEohNYSXwW8HJvbFllt6FmybN9EkW2rNGpc0DPNr0FTGgj/azLFbPb8FwUErHPfmQPprDIb3Yss6bXx8aEDd2w+qvSmajFehjv+juAEzqm4hJXlMI6htHDaR2aXUJsEEUvuq8BliZsKNm+viWSRMmUa09OK701gunx9wMhfsVwb7zDr4zp9ulcVQEm1gTULDJq27w3yeTEbhWDj9OfXxjud2sZZRb1a3fznXDaJOOL6A8ZMvMNviDkNZJJC3K1rFDIc4FAlb5if8B2lQu9axX3XM4Pnle4QmqiTMYke+k9vgmk1CHqjue4EkrbQ8OQWp2P5b2H0gD28XhBgbahbg09AU5cw7chLlX5AENQJUgDoF/SE+i8vRDN1oqtjy382MGjsM9p3QtHXrYOkMTZjpOatiwjW1EYB5pWZ8lcMVACeFmipZcP0tX/tWZ5TDvuKHcTR4Wefjej0ZkzKst5rHxTN1WAhXEb/1XAn/ooTrxNm8o+AhvPn5MKw+xE60pETTp6rlC9ldFq1HOnekfpUtR88pvPmmXWNMRA1rQqe+CC6At7qU5Ct7S9rkJU7LTyvmxNLy4hTIbzxpu0kH6xrGiKPKVfQm5H3cg="
+  },
+  {
+    "product": "pdfOffice",
+    "licensee": {
+      "company": "apcfss",
+      "name": "siddhu gorli",
+      "email": "siddhu.g@apcfss.co.in"
+    },
+    "key": "329b0b98137eeee6dbfaf16f744aa93f8cbf2d71a2868c54f3b3ffb0e37310e0",
+    "creationDate": "2024-07-24",
+    "expirationDate": "2024-08-24",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "productVersion": {
+      "major": 2
+    },
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "DfuTIdN/4rhXe0zUMkyKnHP4JBQPIjo6kkNv4yEuEMmy5VjyePgeZ067T9Cjmr1LCKhXxfWNNMQJ3MfwYa3m3RxLBh/wYTjZyaEXOOTLFKISAiNVF1OXsSJEaPVWuaWcoWcj75XDAZSt9nsj9qyMPn41ozDGRU7JqPCz4eYBwDTHzOJkCUWdE/b49rUU6zuGrSiYI2LKIKU33v4hqABP01Ukn325rL3/20qvzzrXFch5m3dFMB68U/KJRH/Uo2CGObHRT8frwMkybqpA2CbZrBKVxOZTflB33MbXwfpZYm0+wiZJ7c+skMKjmO6lknVoHghvjwHCtUbQJQul+O8W8tkHhv4axqxAUjshiBNPKF0WCwF1bktsmcS9ahZ44xyyXI19QhkynVL5tT4wWF2u8hjNLKindkSwVQbfVUcRwKPe+id4CWXgTErpol9Nm2mOHEHwZSoz39DReorLeUkC+BXi48MueWjgDu3s0RlnXk1Pn2EZonzaTOALjwrAziviwoZwuLea9ZjXJiTqJeECM7kv8cFd4bv+47tcmyjb7QojB2ZDv/+XZdbnMKoNRnqz34ErCseHAhrC1i1/2CxZvQxl1MOufi4MJG+F77OAjCJBkkB7CW8wrscJQ06H47iTKai4NMJvb+B/s9dY6EW4/W55Fv+Ozb9N0FRz/343ivM="
+  }
+]

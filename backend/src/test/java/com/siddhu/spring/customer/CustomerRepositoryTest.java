@@ -1,24 +1,23 @@
 package com.siddhu.spring.customer;
 
 import com.siddhu.spring.AbstractTestContainers;
+import com.siddhu.spring.TestConfig;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
-import org.springframework.boot.test.autoconfigure.orm.jpa.AutoConfigureDataJpa;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Import;
 
 import java.sql.Date;
-import java.util.Optional;
 import java.util.Random;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+@Import({TestConfig.class})
 class CustomerRepositoryTest extends AbstractTestContainers {
 
     @Autowired
@@ -40,7 +39,7 @@ class CustomerRepositoryTest extends AbstractTestContainers {
         String[] gender = {"male","female"};
         Customer customer = new Customer(
                 FAKER.name().fullName(),
-                new Date(FAKER.date().birthday().getTime()),
+                "password", new Date(FAKER.date().birthday().getTime()),
                 gender[random.nextInt(2)]
         );
         underTest.save(customer);

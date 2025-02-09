@@ -50,4 +50,14 @@ public class CustomerJpaDataAccessService implements CustomerDao{
     public void updateCustomer(Customer update) {
         customerRepository.save(update);
     }
+
+    @Override
+    public Optional<Customer> getCustomerWithName(String name) {
+        return customerRepository.findCustomerByName(name);
+    }
+
+    @Override
+    public void updateCustomerProfileImageId(String profileImageId, Integer id) {
+        customerRepository.updateProfileImageId(profileImageId,id);
+    }
 }

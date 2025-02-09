@@ -15,7 +15,7 @@ public class CustomerListDataAccessService implements CustomerDao{
 				new Customer(
 						1,
 						"Alex",
-						new Date(12-2-24),
+                        "password", new Date(12-2-24),
 						"male"
 				));
 
@@ -23,7 +23,7 @@ public class CustomerListDataAccessService implements CustomerDao{
 				new Customer(
 						2,
 						"jamila",
-						new Date(12-2-24),
+                        "password", new Date(12-2-24),
 						"female"
 				));
 
@@ -70,6 +70,20 @@ public class CustomerListDataAccessService implements CustomerDao{
 	@Override
 	public void updateCustomer(Customer update) {
 		customers.add(update);
+	}
+
+	@Override
+	public Optional<Customer> getCustomerWithName(String name) {
+		return customers.stream()
+				.filter(
+						p -> p.getName().equals(name)
+				)
+				.findFirst();
+	}
+
+	@Override
+	public void updateCustomerProfileImageId(String profileImageId, Integer id) {
+
 	}
 
 

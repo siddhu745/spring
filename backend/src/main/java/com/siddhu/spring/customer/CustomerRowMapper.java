@@ -1,6 +1,5 @@
 package com.siddhu.spring.customer;
 
-import org.hibernate.annotations.Comment;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 
@@ -14,8 +13,10 @@ public class CustomerRowMapper implements RowMapper {
         return new Customer(
                 rs.getInt("id"),
                 rs.getString("name"),
+                rs.getString("password"),
                 rs.getDate("date"),
-                rs.getString("gender")
+                rs.getString("gender"),
+                rs.getString("profile_image_id")
         );
     }
 }
